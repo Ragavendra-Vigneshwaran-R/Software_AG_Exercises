@@ -1,13 +1,16 @@
 # Question 4 : Increase the swapsize by adding new swap storage
 
-# create a file that will be used for swap using fallocate command
-fallocate -l 1M /swapfile
+# create a file that will be used for swap
+dd if=/dev/zero of=/swap_file count=1 bs=1M
+
+# secure the swap file 
+chmod 600 /swap_file
 
 # for setting up the file as Linux swap area use mkswap command
-sudo mkswap /swapfile
+sudo mkswap /swap_file
 
 # enable the swap using swapon command:
-sudo swapon /swapfile
+sudo swapon /swap_file
 
 # for verifing that the swap is active, use free command
 free -h
