@@ -1,9 +1,9 @@
 # Question 5 : Remove the swap storage
 
 #1) First, deactivate the swap using below command
-swapoff -v /swapfile
+swapoff -v /swap_file
 
 #2) Remove the swap file entry /swapfile swap swap defaults 0 0 from the /etc/fstab file.
 
 #3) Finally, delete the actual swapfile file using the rm command.
-rm /swapfile
+rm /swap_file
