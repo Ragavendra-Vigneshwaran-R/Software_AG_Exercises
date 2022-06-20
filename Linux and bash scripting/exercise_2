@@ -4,4 +4,4 @@
 su sampleuser
 
 # change the permission of the file.txt to the user and group as rwx using chmod command
-chmod ug+rwx file.txt
+chmod 777 file.txt
