@@ -17,13 +17,23 @@ description
 
 ################################################################################################################################################################################
 # to write json in the file
+#!/bin/bash
+###############################################################################################################################################################################
+
+#Author : Ragavendra Vigneshwaran R
+#Date : 20-06-2022
+#Description : This file will write an script that will get the company name as arguments(command line arguments) and print their products by parsing the following json file
+#Date modified : 20-06-2022
+
+################################################################################################################################################################################
+# to write json in the file
 echo '
 {
-“Ibm”: [“RedHat”,”Mainframe”,”IBM cloud”,”RHEL”],
-“google”: [“k8s”,”kaggle”,”firebase”],
-“microsoft”: [“windows”,”azure”,”office365”],
-“amazon”: [“AWS”,”AWS Gov”,”Amplify”],
-“softwareag”: [“webmethods”,”AIRS”,”ADABAS”,”CumIOT”]
+“Ibm”: ["RedHat","Mainframe","IBM cloud","RHEL"],
+“google”: ["k8s","kaggle","firebase"],
+“microsoft”: [ "windows","azure","office365"],
+“amazon”: ["AWS","AWS Gov","Amplify"],
+“softwareag”: ["webmethods","AIRS","ADABAS","CumIOT"]
 }
 '> company.json
 
