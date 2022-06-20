@@ -1,0 +1,8 @@
+# Question 3 : Increase the open file limit
+
+# show the current limitation use the below  command
+ulimit -a | grep open
+
+# for editing the limit to 4000 use the below command
+ulimit -n 4000 
+# In above command 4000 can be replaced by any desired value.

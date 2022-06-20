@@ -1,0 +1,7 @@
+# Question 2 : Switch to sample user in terminal then change the permission of the file.txt to the user and group as rwx
+
+# switch user using su command
+su sampleuser
+
+# change the permission of the file.txt to the user and group as rwx using chmod command
+chmod ug+rwx file.txt

@@ -1,0 +1,9 @@
+# Question 1: Create an file named file.txt, create an user sampleuser. Change the ownership of the file to sampleuser
+# creating file using touch command
+touch file.txt
+
+# for creating user you have to switch to root.
+sudo useradd sampleuser
+
+# change ownership of file.txt using chown
+chown sampleuser file.txt
