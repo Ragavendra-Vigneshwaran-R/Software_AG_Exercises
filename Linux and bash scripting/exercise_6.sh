@@ -23,5 +23,6 @@ Ram 25 Ops
 Gokul 21 Intern
 Sundar 45 CEO' > content.txt
 
+sudo chmod 777 content.txt
 # For desired output use below command
 awk '{print $1 "("$2")-"$3 }' content.txt
