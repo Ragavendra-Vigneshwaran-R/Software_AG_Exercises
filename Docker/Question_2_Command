@@ -1,0 +1,3 @@
+Question 2 : Spin up an ubuntu docker container, mount the sampledata docker volume. Pass the env variable os=ubuntu to the docker container when bringing it up
+Answer:
+        $ docker run -d -it --name ubuntu1 --mount source=sampledata,destination=bin/data --env OS='ubuntu' ubuntu

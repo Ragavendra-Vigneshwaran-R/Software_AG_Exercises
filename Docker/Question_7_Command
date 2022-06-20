@@ -1,0 +1,19 @@
+Question 7: Create an docker compose file with an nginx and an redis server both connected via an bridge network
+Answer: 
+DockerFile:
+version: '2.0'
+services:
+   nginx:
+     image: nginx
+     networks:
+      - mynetwork
+     ports:
+      - "82:80"
+   redis:
+     image: redis
+     ports:
+      - "3000:6379"
+     networks:
+      - mynetwork
+networks:
+     mynetwork:

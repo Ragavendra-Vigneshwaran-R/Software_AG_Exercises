@@ -1,0 +1,45 @@
+First I have launched an EC2 instance with Ubuntu AMI. 
+
+Next step is to install the git and docker in the ec2 instance by using the commands. 
+
+$ sudo apt-get update 
+$ sudo apt-get install docker
+$ sudo apt-get install git
+
+Public IP address : 13.52.163.2
+
+i) Docker file to create an image with the apache httpd2 server make the start of the httpd2 server as the container entry point.
+DockerFile
+FROM ubuntu:latest
+RUN apt-get -y update 
+RUN apt-get install -y apache2 
+RUN apt-get install -y apache2-utils 
+EXPOSE 80 
+COPY html_pages/index.html /var/www/html/index.html 
+ENTRYPOINT ["/usr/sbin/apache2ctl"] 
+CMD ["-D","FOREGROUND"] 
+
+ii) Next step is to clone the repository into the ec2 directory 
+
+$ sudo git clone https://github.com/Ragavendra-Vigneshwaran-R/html_pages.git
+
+iii) bash script which will pull the contents from the GitHub Repo every 5 hours (use Linux Cron) to the local cloned repo, The script should log all these activities to an log file with timestamp (file which keep track of all script runs)
+
+updating_log.sh
+git pull
+head -n 1 /var/log/lastlog/ >> log.txt
+date>>log.txt
+
+crontab -l
+* */5 * * * pull.sh
+
+iv) Build the image
+
+$ sudo docker build -t apache-server ./DockerFile 
+
+Next step is to spin up the container 
+
+sudo docker run -p 80:80 -v /home/ubuntu/html_pages/:/var/www/html apache-server 
+
+
+

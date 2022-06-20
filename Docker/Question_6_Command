@@ -1,0 +1,5 @@
+Question 6 : Create an bridge network and spin up two containers in the network one with the image you created.
+Answer: 
+        $ docker network create -d bridge mynetwork 
+        $ docker network connect mynetwork container-01
+        $ docker network connect mynetwork container-02 

@@ -1,0 +1,4 @@
+Create an dir names /sampledir mount it to an nginx:1.19.0 docker container 
+Answer:
+        $ mkdir sampledir 
+        $ docker run -d -it --name nginx1 -v /Users/hariv/sampledir:/var/www/html nginx 

@@ -1,0 +1,3 @@
+Question 1 : Create an docker volume named sampledata
+Answer:
+        $ docker volume create sampledata 

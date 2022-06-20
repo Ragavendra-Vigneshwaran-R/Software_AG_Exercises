@@ -1,0 +1,10 @@
+Question 4: Create an docker file to create an image with httpd2 server in it, on running the image as an container the server should start up
+Answer:
+        Dockerfile                                     
+        FROM httpd:2.4 
+        COPY ./website/ /usr/local/apache2/htdocs/ 
+
+        Then, run the commands to build and run the Docker image:                         
+        $ docker build -t my-apache2 .
+        $ docker run -dit --name my-running-app -p 8080:80 my-apache2
+
