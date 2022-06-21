@@ -14,4 +14,4 @@ python3 -m http.server 8080
 done
 
 [service]
-ExecStart=/home/ragav/linux_task/servicescript.sh
+ExecStart=/home/ragav/Software_AG_Exercises/Linux and Bash scripting/servicescript.sh
