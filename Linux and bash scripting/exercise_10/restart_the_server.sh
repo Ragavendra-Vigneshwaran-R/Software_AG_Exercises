@@ -8,4 +8,4 @@
 
 ##########################################################################################################
 
-systemctl restart svservice
+sudo systemctl restart svservice
