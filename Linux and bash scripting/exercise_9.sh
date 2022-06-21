@@ -14,7 +14,7 @@ sudo yum install httpd
 sudo systemctl start httpd
 
 # change the content in "/var/www/html/index.html" file for printing "SoftwareAG" in the home page.
-echo '
+sudo echo '
 <html>
 <head>
 <h1>SoftwareAG</h1>
