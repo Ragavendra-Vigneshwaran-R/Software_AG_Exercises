@@ -8,10 +8,10 @@
 
 ##########################################################################################################
 # install httpd using below command
-yum install httpd
+sudo yum install httpd
 
 # start the apache service using systemctl command
-systemctl start httpd
+sudo systemctl start httpd
 
 # change the content in "/var/www/html/index.html" file for printing "SoftwareAG" in the home page.
 echo '
