@@ -8,4 +8,4 @@
 
 ##########################################################################################################
 
- systemctl start servicescript
+ sudo systemctl start servicescript
