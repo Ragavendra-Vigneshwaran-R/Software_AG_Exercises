@@ -48,7 +48,7 @@ $ sudo docker build -t apache-server ./DockerFile
 
 Next step is to spin up the container 
 
-sudo docker run -p 80:80 -v /home/ubuntu/html_pages/:/var/www/html apache-server 
+$ sudo docker run -p 80:80 -v /home/ubuntu/html_pages/:/var/www/html apache-server 
 
 
 
