@@ -1,3 +1,12 @@
+Question:
+i)Write Docker file to create an image with the apache httpd2 server make the start of the httpd2 server as the container entry point.
+ii)Create an git repository with some html files for our webserver, clone the repo to an local linux machine.
+iii)Create an bash script which will pull the contents from the GitHub Repo every 5 hours (use Linux Cron) to the local cloned repo, The script should log all these activities to an log file with timestamp (file which keep track of all script runs)
+iv)Spin up the container out of the image you create from the docker file, expose the port 80, mount the dir where you have cloned the git repo to the dir inside the container from where httpd2 server reads the HTML files (/var/www/html)
+Do all the above steps inside an AWS linux EC2 machine and share the publicip/DNS of the VM, by allowing the traffic to reach your webpage
+
+Answer:
+
 First I have launched an EC2 instance with Ubuntu AMI. 
 
 Next step is to install the git and docker in the ec2 instance by using the commands. 
