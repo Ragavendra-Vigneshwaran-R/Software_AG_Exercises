@@ -1,0 +1,41 @@
+$ kubectl cluster-info    => is used to view information about the cluster
+
+$ kubectl get nodes      => list all the nodes  of the cluster
+
+$ kubectl  get pods   =>list pods in the cluster.
+
+$ kubectl describe pod podname  => give brief description about the pod
+
+$ kubectl get pods -o wide  => give additional information of the pod such as where pod is running 
+and Ip address of the pod
+$ kubectl create -f podname.yaml   =>  will create the pod
+
+$ kubectl delete pod podname => will delete the pod
+
+$ kubectl apply -f poname.yaml => similar to create command and create pod.
+
+$ kubectl create -f  replicafilename.yaml  => will create replica file
+
+$ kubectl get replicaSet => will give replica information
+
+$ kubectl get replicationcontroller =>will give replicas information
+
+$ kubectl create -f deploymentfilename.yaml => will create deployment
+
+$ kubectl get deployment => give information about the deployment
+
+$ kubectl get all => give information about all objects
+
+$ kubectl rollout status deployment/deploymentname  => will give status of rollout of the 
+deployment.
+$ kubectl rollout history deployment/deploymentname  => will give history of the deployment.
+
+$ kubectl rollout undo deployment/deployname  =>will undo updates
+
+$ kubectl create -f deploymentname.yaml –record =>will record the cause of change.
+
+$ kubectl create -f servicefilename.yaml => will create services
+
+$ kubectl get services => will give info about the services
+
+$ minikube service servicename –url => will give url of the service
