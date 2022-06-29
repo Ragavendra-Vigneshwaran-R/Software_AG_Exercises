@@ -12,7 +12,7 @@ $ kubectl create -f podname.yaml   =>  will create the pod
 
 $ kubectl delete pod podname => will delete the pod
 
-$ kubectl apply -f poname.yaml => similar to create command and create pod.
+$ kubectl apply -f podname.yaml => similar to create command and create pod.
 
 $ kubectl create -f  replicafilename.yaml  => will create replica file
 
